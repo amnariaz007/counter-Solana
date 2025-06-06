@@ -5,15 +5,18 @@ package_manager = "yarn"
 resolution = true
 skip-lint = false
 
-[programs.localnet]
-counter = "Ek9xYYpeP8wMvtepDrFRUxaz6MktuQPPuV9TCGK7b622"
+[programs.devnet]
+counter = "6XE9zPNoqsu2ngVQAy6xdTpogLAuXHoya8NwR2d1Qa8r"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
 cluster = "Devnet"
-wallet = "~/.config/solana/id.json"
+wallet = "/Users/apple/.config/solana/id.json"
+
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+
